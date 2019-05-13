@@ -22,7 +22,7 @@ class DefaultTodoService extends api.TodoService {
                 };
                 resolve(result);
             })
-        })
+        });
     }
 }
 
