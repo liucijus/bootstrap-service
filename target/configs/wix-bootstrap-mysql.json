@@ -1,0 +1,14 @@
+{
+  "readwrite": {
+    "host": "127.0.0.1",
+    "port": "61715",
+    "username": "aUser",
+    "secret:password": "sa"
+  },
+  "readonly": {
+    "host": "127.0.0.1",
+    "port": "61715",
+    "username": "aUser_readonly",
+    "secret:password": "sa_readonly"
+  }
+}

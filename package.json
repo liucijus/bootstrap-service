@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js",
+    "clean": "rm -rf dist && rm -rf src/generated",
+    "prebuild": "npm run clean",
+    "build:proto": "wix-proto-codegen --module . --dir src/generated --filename service-api",
+    "build": "npm run build:proto"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wix/wix-bootstrap-mysql": "^1.0.194",
+    "@wix/wix-bootstrap-ng": "^1.0.3536",
+    "@wix/wix-mysql-testkit": "^1.0.68",
+    "@wix/wix-proto-codegen": "^2.0.225",
+    "@wix/wix-proto-validation": "^1.0.160",
+    "axios": "^0.18.0",
+    "wix-bootstrap-greynode": "^1.0.1233"
+  },
+  "devDependencies": {
+    "@wix/wix-bootstrap-testkit": "^1.1.2531",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.1.4"
+  }
+}
